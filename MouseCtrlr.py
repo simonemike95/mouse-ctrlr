@@ -6,5 +6,6 @@ try:
         xCurr = random.randint(100, 250)
         yCurr = random.randint(100, 250)
         pyautogui.moveTo(xCurr, yCurr, duration = ((xCurr + yCurr) / 120))
+        pyautogui.press('shift')
 except KeyboardInterrupt:
     print('Key interrupt, stopping...')
