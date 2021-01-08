@@ -6,9 +6,9 @@ This simple Python script will control the mouse and move it around randomly.
 - Pip
 
 ### Running the Script:
-- Install Pyautogui using 'pip install pyautogui'
+- Install Pyautogui using 'pip3 install pyautogui'
 - Navigate to the directory the script is stored
-- Run the command 'python MouseCtrlr.py'
+- Run the command 'python3 MouseCtrlr.py'
 
 ### To Quit:
 - Press ctrl + C to kill the process
