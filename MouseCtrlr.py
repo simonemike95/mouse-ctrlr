@@ -45,23 +45,25 @@ try:
         # Move from x_min to x_max (left to right)
         while pyautogui.position()[0] < x_max:
             pyautogui.moveTo(x_max, y_min, duration = 2)
-        time.sleep(5)
+        time.sleep(10)
 
         # move from y_min to y_max (top to bottom)
         while pyautogui.position()[1] < y_max:
             pyautogui.moveTo(x_max, y_max, duration = 2)
-        time.sleep(5)
+        time.sleep(10)
 
         # Move from x_max to x_min (right to left)
         while pyautogui.position()[0] > x_min:
             pyautogui.moveTo(x_min, y_max, duration = 2)
-        time.sleep(5)
+        time.sleep(10)
 
         # Move from y_max to y_min (bottom to top)
         while pyautogui.position()[1] > y_min:
             pyautogui.moveTo(x_min, y_min, duration = 2)
-        time.sleep(5)
+        time.sleep(10)
 
         pyautogui.press('shift')
+except pyautogui.FailSafeException:
+    print("Mouse moved to top left corner, stopping...")
 except KeyboardInterrupt:
     print('Key interrupt, stopping...')
